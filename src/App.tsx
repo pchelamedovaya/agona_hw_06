@@ -1,18 +1,15 @@
 import {FC} from 'react';
 import '/src/styles/App.css';
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
-
-import LoginPage from "./pages/LoginPage.tsx";
+import {BrowserRouter} from 'react-router-dom'
+import AppRouter from "./components/AppRouter.tsx";
 
 const App: FC = () => {
-  return (
+    const shouldShowNavbar = window.location.pathname !== '/login';
+    return (
       <BrowserRouter>
-        <Routes>
-          <Route path="/login" element={<LoginPage/>}/>
-          <Route path="*" element={<LoginPage/>}/>
-        </Routes>
+          <AppRouter shouldShowNavbar={shouldShowNavbar}/>
       </BrowserRouter>
-  )
+    )
 }
 
 export default App;

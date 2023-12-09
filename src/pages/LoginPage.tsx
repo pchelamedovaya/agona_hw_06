@@ -11,7 +11,7 @@ const LoginPage = () => {
                      alt="Logo"/>
                 <LoginForm></LoginForm>
                 <span className="loginPage_info">Еще не зарегистрированы?
-                  <Link to="/"> Регистрация</Link>
+                  <Link to="/" className="loginPage_info__reg"> Регистрация</Link>
               </span>
             </div>
         </section>

@@ -1,7 +1,12 @@
 import {FC} from 'react';
+import {useNavigate} from 'react-router-dom';
 import '/src/styles/App.css';
 
 const LoginForm: FC = () => {
+    const router = useNavigate();
+    const handleLogin = () => {
+        router('/collection');
+    }
     return (
         <form className="loginPage_form">
             <label className="email_label">
@@ -20,7 +25,8 @@ const LoginForm: FC = () => {
             </label>
             <button
                 type="button"
-                className="loginPage_button">Войти
+                className="loginPage_button"
+                onClick={handleLogin}>Войти
             </button>
         </form>
     );

@@ -1,4 +1,6 @@
 @import "LoginPage.css";
+@import "Navbar.css";
+@import "CollectionPage.css";
 
 * {
   box-sizing: border-box;
@@ -17,7 +19,6 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #002DFF;
 }
 button {
   border: none;
@@ -31,3 +32,11 @@ input {
   caret-color: grey;
   font-size: 16px;
 }
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
