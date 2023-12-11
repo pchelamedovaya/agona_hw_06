@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+input {
+    border: none;
+    outline: none;
+    text-align: center;
+    caret-color: grey;
+    font-size: 16px;
+}
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}

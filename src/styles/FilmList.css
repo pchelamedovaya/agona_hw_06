@@ -1,0 +1,11 @@
+.collectionPage_container__films {
+    position: relative;
+}
+.collectionPage_container__filmsDetail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+    margin-bottom: 7px;
+    justify-content: center;
+    max-width: 630px;
+}

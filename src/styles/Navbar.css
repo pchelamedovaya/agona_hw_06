@@ -7,10 +7,6 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
 }
 .navigation_container__account {
     display: flex;

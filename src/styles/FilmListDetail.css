@@ -1,0 +1,15 @@
+.filmDetail {
+    display: flex;
+    flex-direction: column;
+}
+.filmDetail_img {
+    margin-bottom: 11px;
+    width: 100%;
+}
+.filmDetail_text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21.5px;
+    letter-spacing: -0.093px;
+}
