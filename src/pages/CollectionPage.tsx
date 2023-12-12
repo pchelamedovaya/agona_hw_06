@@ -3,7 +3,7 @@ import {IFilm} from "../types/types.tsx";
 import FilmList from "../components/FilmList.tsx";
 import {useEffect, useState} from "react";
 import ButtonViewStatus from "../components/ButtonViewStatus.tsx";
-import axios from "axios";
+import FilmService from "../API/FilmService.tsx";
 
 
 const CollectionPage = () => {
@@ -14,13 +14,9 @@ const CollectionPage = () => {
     }, [])
 
     async function fetchFilms() {
-        try {
-            const response = await axios.get<IFilm>("https://jsonplaceholder.typicode.com/photos?_limit=4");
-            // @ts-ignore
-            setFilms(response.data)
-        } catch (e) {
-            alert(e)
-        }
+        const films = await FilmService.getAll();
+        // @ts-ignore
+        setFilms(films)
     }
 
     return (
