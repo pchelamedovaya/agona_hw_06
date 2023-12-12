@@ -1,0 +1,25 @@
+.name,
+.about,
+.genre {
+    padding: 19px 16px;
+    width: 375px;
+    border-bottom: 1px #3c3c434d solid;
+    text-align: start;
+}
+.name::placeholder,
+.about::placeholder,
+.genre::placeholder {
+    text-align: start;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #3c3c434d;
+}
+.aboutForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

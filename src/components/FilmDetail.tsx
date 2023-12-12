@@ -23,7 +23,9 @@ const FilmDetail = () => {
         <section className="filmDet">
             <div className="filmDetail_container">
                 <div className="filmDetail_container__img">
-                    <img className="filmDetail_img" src={film && film.url} alt="film image"/>
+                    <img className="filmDetail_img"
+                         src={film && film.url}
+                         alt="film image"/>
                     {/*<img className="filmDetail_img" src="/public/images/test-film.png" alt="film image"/>*/}
                 </div>
                 <div className="filmDetail_container__details">
@@ -40,8 +42,12 @@ const FilmDetail = () => {
                         </div>
                     </div>
                     <div className="filmDetail_container__button">
-                        <img src="/public/images/button-add.svg" alt="add button"/>
-                        <button type="button" className="filmDetail_button__text">Буду смотреть</button>
+                        <img
+                            src="/public/images/button-add.svg"
+                            alt="add button"/>
+                        <button className="filmDetail_button__text"
+                                type="button"
+                                >Буду смотреть</button>
                     </div>
                     {/*<div className="filmDetail_description">{film && film.description}</div>*/}
                     <div className="filmDetail_description">{film && film.title}</div>

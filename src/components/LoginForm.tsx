@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import {useNavigate} from 'react-router-dom';
-import '/src/styles/App.css';
+import '/src/styles/LoginPage.css';
 
 const LoginForm: FC = () => {
     const router = useNavigate();
@@ -10,22 +10,19 @@ const LoginForm: FC = () => {
     return (
         <form className="loginPage_form">
             <label className="email_label">
-                <input
+                <input className="email"
                     type="email"
-                    className="email"
                     placeholder="Адрес электронной почты"
                 />
             </label>
             <label className="password_label">
-                <input
+                <input className="password"
                     type="password"
-                    className="password"
                     placeholder="Пароль"
                 />
             </label>
-            <button
+            <button className="loginPage_button"
                 type="button"
-                className="loginPage_button"
                 onClick={handleLogin}>Войти
             </button>
         </form>

@@ -6,12 +6,20 @@ const ButtonViewStatus = () => {
             <div className="wrapper_buttons">
                 <div className="collectionPage_container__buttons">
                     <div className="collectionPage_buttons">
-                        <button type="button" className="button_willWatch">Буду смотреть</button>
-                        <button type="button" className="button_alreadyWatched">Просмотрено</button>
+                        <button
+                            className="button_willWatch"
+                            type="button"
+                            >Буду смотреть</button>
+                        <button className="button_alreadyWatched"
+                                type="button"
+                            >Просмотрено</button>
                     </div>
                 </div>
-                <button type="button" className="button-menu">
-                    <img src="public/images/menu.svg" alt="menu"/>
+                <button className="button-menu"
+                        type="button" >
+                    <img
+                        src="public/images/menu.svg"
+                        alt="menu"/>
                 </button>
             </div>
         </div>

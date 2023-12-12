@@ -1,0 +1,42 @@
+.searchPage {
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.searchPage_container__text {
+    margin-bottom: 33px;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0.374px;
+}
+.search_recommendations_container {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search_recommendations__text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+.search_recommendations__all {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #002DFF;
+}
+.searchPage_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

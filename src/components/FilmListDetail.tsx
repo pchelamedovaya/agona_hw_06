@@ -12,7 +12,9 @@ const FilmListDetail: FC<FilmListDetailProps> = ({film}) => {
         <Link to={`/collection/${film.id}`}>
             <div className="filmDetail">
                 {/*<img className="filmDetail_img" src="public/images/test-film.png" alt="film image"/>*/}
-                <img className="filmDetail_img" src={film.url} alt="film image"/>
+                <img className="filmDetail_img"
+                     src={film.url}
+                     alt="film image"/>
                 <span className="filmDetail_text">{film.title}</span>
             </div>
         </Link>
